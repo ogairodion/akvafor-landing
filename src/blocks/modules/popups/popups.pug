@@ -1,0 +1,33 @@
+section.popups.popup-invest#popup-invest
+    form.form(action="./send.php")
+        .form__title Оставьте заявку
+        .form__subtitle Наш специалист вам перезвонит
+        .form__inputs 
+            .form__input
+                input(type="text" name="name" placeholder="Ваше имя" required) 
+            .form__input
+                input.phone(type="tel" name="phone" placeholder="Ваш телефон" required)
+            input.form__submit.btn.btn--blue(type="submit" value="Получить консультацию")
+            input.hidden(type="text" name="form" value="Стать инвестором")
+        .form__checkbox
+            .form__checkbox-container
+                input.form__checkbox-input(type="checkbox" checked)
+                span.form__checkbox-btn
+                .form__checkbox-text Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.
+
+section.popups.popup-magazine#popup-magazine
+    form.form(action="./send.php")
+        .form__title Оставьте заявку
+        .form__subtitle Наш специалист вышлет вам журнал на почту
+        .form__inputs 
+            .form__input
+                input(type="text" name="name" placeholder="Ваше имя" required) 
+            .form__input
+                input(type="email" name="email" placeholder="Ваша почта" required)
+            input.form__submit.btn.btn--blue(type="submit" value="Получить журнал")
+            input.hidden(type="text" name="form" value="Получить журнал")
+        .form__checkbox
+            .form__checkbox-container
+                input.form__checkbox-input(type="checkbox" checked)
+                span.form__checkbox-btn
+                .form__checkbox-text Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.

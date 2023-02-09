@@ -1,0 +1,74 @@
+.popups {
+    display: none;
+    .form {
+        max-width: 643px;
+        text-align: center;
+        padding: 32px 52px;
+        box-sizing: border-box;
+        background: #fff;
+        @media screen and (max-width: 600px) {
+            padding: 40px;
+        }
+        &__title {
+            font-size: 48px;
+            line-height: 120%;
+            @media screen and (max-width: 600px) {
+                font-size: 30px;
+            }
+        }
+        &__subtitle {
+            font-size: 21px;
+            line-height: 120%;
+            color: #959595;
+            @media screen and (max-width: 600px) {
+                font-size: 18px;
+            }
+        }
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+        }
+        &__input {
+            margin-bottom: 54px;
+            @media screen and (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+            input {
+                min-height: 42px;
+                border-bottom: 1px solid #959595;
+            }
+            &:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+        &__submit {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            min-height: 62px;
+            @media screen and (max-width: 600px) {
+                min-height: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        &__checkbox {
+            max-width: 80%;
+            margin: 0 auto;
+            @media screen and (max-width: 600px) {
+                max-width: 100%;
+                text-align: left;
+            } 
+            &-btn {
+                top: 3px;
+                left: 14px;
+                transform: translateY(0);
+                @media screen and (max-width: 600px) {
+                    left: 0;
+                } 
+            }
+        }
+    }
+    .btn--thanks {
+        margin: 20px auto 0;
+    }
+}

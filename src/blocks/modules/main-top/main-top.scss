@@ -1,0 +1,85 @@
+.main-top {
+    width: 100%;
+    min-height: 100vh;
+    background: url('.././img/main/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 300px;
+    @media screen and (max-width: 991px) {
+        min-height: 0;
+        padding-bottom: 140px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 120px;
+        padding-bottom: 36px;
+    }
+    &__title {
+        margin-bottom: 158px;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 100px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+        }
+        &-item {
+            width: 33.3333%;
+            font-size: 16px;
+            line-height: 160%;
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                max-width: 500px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__text {
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    &__contacts {
+        a {
+            position: relative;
+            &:hover {
+                color: $blue;
+            }
+        }
+        &-address {
+            position: relative;
+            &:before {  
+                position: absolute;
+                top: -2px;
+                left: -14px;
+                content: url('.././img/svg/map.svg');
+                @media screen and (max-width: 991px) {
+                    left: 94%;
+                }
+            }
+        }
+    }
+    &__btn {
+        font-size: 18px;
+        margin: 0 80px;
+        @media screen and (max-width: 991px) {
+            max-width: 261px;
+            margin: 40px 0;
+        }
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+            margin: 35px 0 46px;
+        }
+    }
+}

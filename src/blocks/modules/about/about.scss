@@ -1,0 +1,80 @@
+.about {
+    padding-bottom: 93px;
+    @media screen and (max-width: 991px) {
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__img {
+        max-width: 304px;
+        @media screen and (max-width: 991px) {
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 767px) {
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            margin: 0;
+        }
+        img {
+            display: block;
+            height: auto;
+            margin-bottom: 27px;
+            @media screen and (max-width: 767px) {
+                max-width: 150px;
+                margin-bottom: 0;
+            }
+        }
+        picture {
+            @media screen and (max-width: 767px) {
+                margin-right: 20px;
+            }
+        }
+    }
+    &__text {
+        max-width: 500px;
+        margin-left: auto;
+        @media screen and (max-width: 991px) {
+            margin: 0 auto;
+            margin-left: 20px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+        p {
+            font-size: 24px;
+            line-height: 145%;
+            color: #959595;
+            margin-bottom: 40px;
+            @media screen and (max-width: 991px) {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+    }
+    &__info {
+        font-size: 18px;
+        line-height: 150%;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+        &-name {
+            font-weight: 900;
+        }
+        &-position {
+            font-size: 12px;
+            line-height: 110%;
+        }
+    }
+}

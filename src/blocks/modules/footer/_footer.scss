@@ -1,0 +1,65 @@
+.footer {
+    font-size: 16px;
+    line-height: 140%;
+    background: #fff;
+    padding: 71px 0 120px;
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+        padding: 40px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 20px 0;
+    }
+    &__items {
+        display: flex;
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+        }
+    }
+    &__address {
+        max-width: 244px;
+        margin-right: 70px;
+        @media screen and (max-width: 991px) {
+            max-width: 100%;
+            margin-right: 0;
+        }
+        span {
+            @media screen and (max-width: 991px) {
+                display: block;
+                font-weight: 900;
+            }
+        }
+    }
+    &__phones {
+        max-width: 140px;
+        margin-right: 70px;
+        @media screen and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            order: 3;
+        }
+        @media screen and (max-width: 400px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__mail {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__phone {
+        @media screen and (max-width: 991px) {
+            font-size: 18px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    a {
+        &:hover {
+            color: $blue;
+        }
+    }
+}
